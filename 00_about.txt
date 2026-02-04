@@ -1,0 +1,26 @@
+//its build on top on react js
+
+you have to keep everything in src directoty 
+then we have app directory
+
+middlewares should be inside src
+
+which has API( which also contain backend and route which help for routing) and in fontend routing is handled by page
+
+look NEXTJS is a frameWork naming convention and very important here very very 
+
+page.tsx does everything which happend in the client side
+
+you dont need express here
+
+look if you want to craeate a page here simple craete a folder in that folder add a file page.tsx and add your content there
+
+NEXTJS is a edge run frameWork what it means is that everytime you have to make connection and NEXTJS dont persist connections
+
+here everything on the frontend is treated as serve components
+it can access everything on the server 
+
+the default behaviour is treat everything as server components
+if we want to design something for frontend we have to explictly make it a client a components
+
+we are going to setup the backend
