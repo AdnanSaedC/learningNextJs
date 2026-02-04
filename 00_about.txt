@@ -24,3 +24,9 @@ the default behaviour is treat everything as server components
 if we want to design something for frontend we have to explictly make it a client a components
 
 we are going to setup the backend
+
+
+what is a middlewares
+its nothing but it stops the request and do some opertaion before it reaches the its final destination
+
+so its sits in the middle and do some opertaion in the request
