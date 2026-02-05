@@ -38,8 +38,6 @@ export async function POST(request: NextRequest) {
         // the exclamation mark is tell ts that it will come dont worry
         const jwtToken = await jwt.sign(tokenData, process.env.TOKEN_SECRET!, { expiresIn: "1d" })
 
-        user.verifyToken = jwtToken
-        user.verifyTokenExpiry = Date.now() + 24 * 60 * 60 * 1000;
         await user.save()
         const responce = NextResponse.json({ message: "login Successfully" }, { status: 200 })
 

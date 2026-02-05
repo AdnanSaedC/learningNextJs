@@ -30,3 +30,6 @@ what is a middlewares
 its nothing but it stops the request and do some opertaion before it reaches the its final destination
 
 so its sits in the middle and do some opertaion in the request
+
+you can get everythinh in the search url after '?'
+in console from window.location.search

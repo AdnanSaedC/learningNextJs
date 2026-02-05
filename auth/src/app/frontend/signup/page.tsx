@@ -105,6 +105,9 @@ export default function SignupPage() {
           <div className="flex justify-center">
             <Link href="/frontend/login" className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">Login here</Link>
           </div>
+          <div className="flex justify-center">
+            <Link href="/frontend/forgotpassword" className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">Forgot Password</Link>
+          </div>
         </form>
       </div>
     </div>

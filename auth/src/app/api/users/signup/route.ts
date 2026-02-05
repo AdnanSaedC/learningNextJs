@@ -5,6 +5,7 @@
 // here api/user/signup
 // in the signup folder we have craeted this route.js file to handle all type of request 
 import { connectToTheDatabase } from "@/src/app/dbConfig/dbConfig";
+import { sendMail } from "@/src/helpers/nodeMailer";
 import User from "@/src/models/userModel.js";
 import bcryptjs from "bcryptjs";
 import { error } from "console";
@@ -40,6 +41,8 @@ export async function POST(request: NextRequest) {
 
         // when you console log all the field which dont have value for a particular obj or user is grouped as labelled as -v
         console.log(newUser)
+        const response = await sendMail({ email, emailType: "VERIFY", userId: newUser._id })
+        console.log(response)
 
         return NextResponse.json(
             {
